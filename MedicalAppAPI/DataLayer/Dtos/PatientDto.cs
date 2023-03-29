@@ -1,4 +1,6 @@
-﻿namespace MedicalAppAPI.DataLayer.Dtos
+﻿using MedicalAppAPI.Entities;
+
+namespace MedicalAppAPI.DataLayer.Dtos
 {
     public class PatientDto
     {
@@ -8,5 +10,6 @@
 
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
+        public List<MedicalRecordDto> MedicalRecords { get; set; }
     }
 }

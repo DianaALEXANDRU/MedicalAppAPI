@@ -1,5 +1,6 @@
 ﻿using MedicalAppAPI.DataLayer.Dtos;
-using MedicalAppAPI.DataLayer.Entities;
+using MedicalAppAPI.Entities;
+using MedicalAppAPI.DataLayer.Mapping;
 using System.Numerics;
 
 namespace MedicalAppAPI.Mapping
@@ -16,6 +17,7 @@ namespace MedicalAppAPI.Mapping
             result.CNP = patient.CNP;   
             result.PhoneNumber = patient.PhoneNumber;   
             result.Email = patient.Email;
+            result.MedicalRecords = patient.MedicalRecords.ToMedicalRecordDtos();
             return result;
         }
     }

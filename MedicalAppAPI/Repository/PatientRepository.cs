@@ -1,4 +1,4 @@
-﻿using MedicalAppAPI.DataLayer.Entities;
+﻿using MedicalAppAPI.Entities;
 using System.Numerics;
 
 namespace MedicalAppAPI.Repository
@@ -34,7 +34,8 @@ namespace MedicalAppAPI.Repository
             Random rand = new Random();
             if (patient.Id == null || patient.Id == 0)
                 patient.Id = rand.Next(DbContext.Patients.Count, 100);
-          
+            if (patient.MedicalRecords == null)
+                patient.MedicalRecords = new List<MedicalRecord>();
 
             var result = new Patient()
             {
@@ -44,6 +45,7 @@ namespace MedicalAppAPI.Repository
                 CNP = patient.CNP,
                 PhoneNumber = patient.PhoneNumber,
                 Email = patient.Email,
+               // MedicalRecords = patient.MedicalRecords,
 
 
             };

@@ -1,6 +1,6 @@
 ﻿using MedicalAppAPI.Core.Dtos;
 using MedicalAppAPI.Core.Services;
-using MedicalAppAPI.DataLayer.Entities;
+using MedicalAppAPI.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Numerics;
 

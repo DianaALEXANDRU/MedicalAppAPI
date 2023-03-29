@@ -1,4 +1,4 @@
-﻿namespace MedicalAppAPI.DataLayer.Entities
+﻿namespace MedicalAppAPI.Entities
 {
     public class Patient
     {
@@ -8,8 +8,8 @@
         public string CNP { get; set; }
 
         public string PhoneNumber { get; set; }
-        public string Email { get; set; }   
+        public string Email { get; set; }
 
-        
+        public List<MedicalRecord> MedicalRecords { get; set; }
     }
 }

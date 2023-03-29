@@ -1,5 +1,5 @@
 ﻿using MedicalAppAPI.DataLayer.Dtos;
-using MedicalAppAPI.DataLayer.Entities;
+using MedicalAppAPI.Entities;
 using MedicalAppAPI.Repository;
 using MedicalAppAPI.Mapping;
 using System.Numerics;
